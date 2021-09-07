@@ -1,0 +1,250 @@
+@import 'colors';
+
+* {
+    font-family: 'Poppins';
+}
+
+@mixin flex($align, $justify: space-between, $wrap: wrap) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+%btn-effect {
+    transition: 0.2s;
+    opacity: 0.85;
+    border: none;
+}
+%style-container {
+    margin: 0 auto;
+    padding: 2rem;
+}
+%style-type-box {
+    height: 370px;
+    max-width: 270px;
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+h1 {
+    color: $primary_color;
+} 
+.header {
+    max-width: 1170px;
+    @extend %style-container;
+    @include flex(center);
+    span {
+        color: $secondary_color;
+    }
+    &__logo {
+        color: $primary_color;
+    }
+    &__menu {
+        @include flex(center);
+        gap: 50px;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        a {
+            font-weight: 500;
+            color: $primary_color;
+            text-decoration: none;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        :nth-child(1) {
+            i {
+                padding-left: 10px;
+            }
+        }
+        :nth-child(4) {
+            margin-left: 20px;
+        }
+        .btn-link:hover {
+            background-color: $secondary_color;
+            @extend %btn-effect;
+        }
+    }
+}
+.btn-link {
+    height: 37px;
+    border: 1px solid $primary_color;
+    border-radius: 50px;
+    width: 100px;
+    padding-top: 10px;
+}
+
+.container-banner {
+    margin-top: 40px;
+}
+
+.banner {
+    max-width: 718px;
+    @extend %style-container;
+    @include flex(center, center);
+    &__text-big {
+        padding-top: 0px;
+        h1 { 
+            margin: 0;
+            font-size: 4rem;
+        }
+    }
+    &__text-small {
+        p {
+            text-align: center;
+            font-size: 1.5rem;
+            color: $blur_primary_color;
+        }
+    }
+    &__btn {
+        margin-top: 20px;
+        button {
+            width: 135px;
+            height: 50px;
+            padding-top: 0;
+            color: $primary_color;
+        }
+        &-explore {
+            font-weight: 600;
+            background-color: white;
+        }
+        &-buy {
+            font-weight: 600;
+            margin-left: 28px;
+            border: transparent;
+            background-color: $buy_btn_color;
+        }
+        .btn-link:first-child:hover {
+            background-color: $secondary_color;
+            @extend %btn-effect;
+        }
+        .btn-link:nth-child(2):hover {
+            opacity: 0.75;
+            transition: 0.3s;
+        }
+    }
+}
+
+.container-type {
+    margin-top: 160px;
+}
+
+.type {
+    max-width: 1170px;
+    @include flex(center, space-between);
+    gap: 25px;
+    @extend %style-container;
+    color: $primary_color;
+    a {
+        opacity: 60%;
+        text-decoration: none;
+        color: $primary_color;
+    }
+    .box-type {
+        border-radius: 20px;
+    }
+    &__safe {
+        @extend %style-type-box;
+        box-shadow: 0px 20px 30px 10px $safe_type;
+        &-box {
+            max-width: 209px;
+            margin: 0 auto;
+            &-link {
+                span {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    &__delicious {
+        @extend %style-type-box;
+        box-shadow: 0px 20px 30px 10px $delicious_type;
+        &-box {
+            max-width: 209px;
+            margin: 0 auto;
+            &-link {
+                span {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    &__entertainment {
+        @extend %style-type-box;
+        box-shadow: 0px 20px 30px 10px $entertainment_type;
+        &-box {
+            max-width: 209px;
+            margin: 0 auto;
+            &-link {
+                span {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    &__cream {
+        @extend %style-type-box;
+        box-shadow: 0px 20px 30px 10px $cream_type;
+        &-box {
+            max-width: 209px;
+            margin: 0 auto;
+            &-link {
+                span {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+}
+.container-intro {
+    margin-top: 125px;
+}
+
+.intro {
+    max-width: 1143px;
+    @include flex(flex-start, space-between);
+    gap: 100px;
+    @extend %style-container;
+    &__content {
+        max-width: 471px;
+        margin-top: 72px;
+        &-bigText {
+            h1 {
+                font-weight: 1100;
+                font-size: 2.2rem;
+            }
+        }
+        &-introText {
+            max-width: 440px;
+            p {
+                color: $blur_primary_color;
+            }
+        }
+        &-list {
+            margin-top: 30px;
+            max-width: 420px;
+            p {
+                color: $primary_color;
+                text-decoration: underline;
+                text-underline-position: under;
+                font-weight: 1000;
+            }
+        }
+        &-btn {
+            :hover {
+                @extend %btn-effect;
+            }
+            button {
+                margin-top: 25px;
+                margin-left: 0px;
+                width: 172px;
+                p {
+                    margin-top: 0;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

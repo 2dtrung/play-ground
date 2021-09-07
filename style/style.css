@@ -1,0 +1,184 @@
+* {
+  font-family: 'Poppins'; }
+
+.header__menu .btn-link:hover, .banner__btn .btn-link:first-child:hover, .intro__content-btn :hover {
+  transition: 0.2s;
+  opacity: 0.85;
+  border: none; }
+
+.header, .banner, .type, .intro {
+  margin: 0 auto;
+  padding: 2rem; }
+
+.type__safe, .type__delicious, .type__entertainment, .type__cream {
+  height: 370px;
+  max-width: 270px;
+  width: 270px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+h1 {
+  color: #1a2b5f; }
+
+.header {
+  max-width: 1170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .header span {
+    color: #ffc87a; }
+  .header__logo {
+    color: #1a2b5f; }
+  .header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto; }
+    .header__menu a {
+      font-weight: 500;
+      color: #1a2b5f;
+      text-decoration: none;
+      margin-top: auto;
+      margin-bottom: auto; }
+    .header__menu :nth-child(1) i {
+      padding-left: 10px; }
+    .header__menu :nth-child(4) {
+      margin-left: 20px; }
+    .header__menu .btn-link:hover {
+      background-color: #ffc87a; }
+
+.btn-link {
+  height: 37px;
+  border: 1px solid #1a2b5f;
+  border-radius: 50px;
+  width: 100px;
+  padding-top: 10px; }
+
+.container-banner {
+  margin-top: 40px; }
+
+.banner {
+  max-width: 718px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .banner__text-big {
+    padding-top: 0px; }
+    .banner__text-big h1 {
+      margin: 0;
+      font-size: 4rem; }
+  .banner__text-small p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #6a7597; }
+  .banner__btn {
+    margin-top: 20px; }
+    .banner__btn button {
+      width: 135px;
+      height: 50px;
+      padding-top: 0;
+      color: #1a2b5f; }
+    .banner__btn-explore {
+      font-weight: 600;
+      background-color: white; }
+    .banner__btn-buy {
+      font-weight: 600;
+      margin-left: 28px;
+      border: transparent;
+      background-color: #ffce7a; }
+    .banner__btn .btn-link:first-child:hover {
+      background-color: #ffc87a; }
+    .banner__btn .btn-link:nth-child(2):hover {
+      opacity: 0.75;
+      transition: 0.3s; }
+
+.container-type {
+  margin-top: 160px; }
+
+.type {
+  max-width: 1170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+  color: #1a2b5f; }
+  .type a {
+    opacity: 60%;
+    text-decoration: none;
+    color: #1a2b5f; }
+  .type .box-type {
+    border-radius: 20px; }
+  .type__safe {
+    box-shadow: 0px 20px 30px 10px #ff97c3; }
+    .type__safe-box {
+      max-width: 209px;
+      margin: 0 auto; }
+      .type__safe-box-link span {
+        margin-left: 5px; }
+  .type__delicious {
+    box-shadow: 0px 20px 30px 10px #ff706d; }
+    .type__delicious-box {
+      max-width: 209px;
+      margin: 0 auto; }
+      .type__delicious-box-link span {
+        margin-left: 5px; }
+  .type__entertainment {
+    box-shadow: 0px 20px 30px 10px #8598ff; }
+    .type__entertainment-box {
+      max-width: 209px;
+      margin: 0 auto; }
+      .type__entertainment-box-link span {
+        margin-left: 5px; }
+  .type__cream {
+    box-shadow: 0px 20px 30px 10px #ffc87a; }
+    .type__cream-box {
+      max-width: 209px;
+      margin: 0 auto; }
+      .type__cream-box-link span {
+        margin-left: 5px; }
+
+.container-intro {
+  margin-top: 125px; }
+
+.intro {
+  max-width: 1143px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 100px; }
+  .intro__content {
+    max-width: 471px;
+    margin-top: 72px; }
+    .intro__content-bigText h1 {
+      font-weight: 1100;
+      font-size: 2.2rem; }
+    .intro__content-introText {
+      max-width: 440px; }
+      .intro__content-introText p {
+        color: #6a7597; }
+    .intro__content-list {
+      margin-top: 30px;
+      max-width: 420px; }
+      .intro__content-list p {
+        color: #1a2b5f;
+        text-decoration: underline;
+        text-underline-position: under;
+        font-weight: 1000; }
+    .intro__content-btn button {
+      margin-top: 25px;
+      margin-left: 0px;
+      width: 172px; }
+      .intro__content-btn button p {
+        margin-top: 0;
+        font-weight: 600; }
+
+/*# sourceMappingURL=style.css.map */
