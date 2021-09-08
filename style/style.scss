@@ -146,7 +146,7 @@ h1 {
     }
     &__safe {
         @extend %style-type-box;
-        box-shadow: 0px 20px 30px 10px $safe_type;
+        box-shadow: 0px 20px 30px 5px $safe_type;
         &-box {
             max-width: 209px;
             margin: 0 auto;
@@ -159,7 +159,7 @@ h1 {
     }
     &__delicious {
         @extend %style-type-box;
-        box-shadow: 0px 20px 30px 10px $delicious_type;
+        box-shadow: 0px 20px 30px 5px $delicious_type;
         &-box {
             max-width: 209px;
             margin: 0 auto;
@@ -172,7 +172,7 @@ h1 {
     }
     &__entertainment {
         @extend %style-type-box;
-        box-shadow: 0px 20px 30px 10px $entertainment_type;
+        box-shadow: 0px 20px 30px 5px $entertainment_type;
         &-box {
             max-width: 209px;
             margin: 0 auto;
@@ -185,7 +185,7 @@ h1 {
     }
     &__cream {
         @extend %style-type-box;
-        box-shadow: 0px 20px 30px 10px $cream_type;
+        box-shadow: 0px 20px 30px 5px $cream_type;
         &-box {
             max-width: 209px;
             margin: 0 auto;
@@ -241,10 +241,76 @@ h1 {
                 margin-left: 0px;
                 width: 172px;
                 p {
+                    color: $primary_color;
                     margin-top: 0;
                     font-weight: 600;
                 }
             }
+        }
+    }
+}
+
+.container-intro1 {
+    margin-top: 100px;
+}
+.intro1 {
+    max-width: 1176px;
+    @include flex(flex-start, space-between);
+    column-gap: 125px;
+    margin: 0 auto;
+    padding-left: 3rem;
+    padding-right: 1rem;
+    &__content {
+        margin-top: 80px;
+        max-width: 440px;
+        &-bigText {
+            max-width: 364px;
+            h1 {
+                font-weight: 1100;
+                font-size: 2.2rem;
+            }
+        }
+        &-intro1Text {
+            p {
+                color: $blur_primary_color;
+            }
+        }
+        &-list {
+            max-width: 260px;
+            margin-top: 35px;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 12px;
+            justify-content: space-between;
+            div {
+                border-radius: 20px;
+                margin-top: 19px;
+                width: 20px;
+                height: 20px;
+            }
+            .list-dot:first-child {
+                background-color: #ff6adf;
+            }
+            .list-dot:nth-child(3) {
+                background-color: #92fa3c;
+            }
+            .list-dot:nth-child(5) {
+                background-color: #1ec0f4;
+            }
+            .list-dot:nth-child(7) {
+                background-color: #ff899c;
+            }
+            p {
+                color: $primary_color;
+                font-weight: 1000;
+
+            }
+        }
+    }
+    &__img {
+        max-width: 605px;
+        img {
+            width: 100%;
         }
     }
 }
