@@ -40,6 +40,9 @@ h1 {
     &__logo {
         color: $primary_color;
     }
+    &__bars {
+        display: none;
+    }
     &__menu {
         @include flex(center);
         gap: 50px;
@@ -313,4 +316,43 @@ h1 {
             width: 100%;
         }
     }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        column-gap: 100px;
+    }
+    .header__menu {
+        height: 100px;
+        display: none;
+        a {
+            margin-top: 20x;
+        }
+    }
+    .header__bars {
+        display: inline-block;
+    }
+    
+}
+@media screen and (max-width: 762px) {
+    .banner__text-big h1 {
+        font-size: 3rem;
+    }
+    
+    
+}
+@media screen and (max-width: 583px) {
+    .banner__text-big h1 {
+        font-size: 2rem;
+    }
+    
+    
+}
+
+
+@media screen and (max-width: 524px) {
+    .header__menu {
+        column-gap: 10px;
+    }
+    
 }

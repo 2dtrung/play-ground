@@ -31,6 +31,8 @@ h1 {
     color: #ffc87a; }
   .header__logo {
     color: #1a2b5f; }
+  .header__bars {
+    display: none; }
   .header__menu {
     display: flex;
     align-items: center;
@@ -232,5 +234,27 @@ h1 {
     max-width: 605px; }
     .intro1__img img {
       width: 100%; }
+
+@media screen and (max-width: 767px) {
+  .header {
+    column-gap: 100px; }
+
+  .header__menu {
+    height: 100px;
+    display: none; }
+    .header__menu a {
+      margin-top: 20x; }
+
+  .header__bars {
+    display: inline-block; } }
+@media screen and (max-width: 762px) {
+  .banner__text-big h1 {
+    font-size: 3rem; } }
+@media screen and (max-width: 583px) {
+  .banner__text-big h1 {
+    font-size: 2rem; } }
+@media screen and (max-width: 524px) {
+  .header__menu {
+    column-gap: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
